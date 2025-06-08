@@ -20,13 +20,13 @@ function Nav() {
                     <Link to="/" className={linkClass('/')}>About</Link>
                 </li>
                 <li>
-                    <Link to="/projects" className={linkClass('/projects')}>Projects</Link>
-                </li>
-                <li>
                     <Link to="/bio" className={linkClass('/bio')}>Bio</Link>
                 </li>
                 <li>
                     <Link to="/cv" className={linkClass('/cv')}>CV</Link>
+                </li>
+                <li>
+                    <Link to="/projects" className={linkClass('/projects')}>Projects</Link>
                 </li>
             </ul>
         </nav>
@@ -64,23 +64,11 @@ function Header() {
 }
 
 function Footer() {
-    const year = new Date().getFullYear()
     return (
         <footer className="w-full border-t border-gray-800 bg-gray-950/80 backdrop-blur py-4 mt-12">
             <div className="container mx-auto flex flex-col items-center gap-1 text-sm text-gray-400">
                 <div>
-                    made with <span className="text-red-500">♥</span> by{' '}
-                    <a
-                        href="https://github.com/blacklion0221"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline hover:text-blue-400 transition-colors"
-                    >
-                        Malte
-                    </a>
-                </div>
-                <div>
-                    &copy; {year} &middot;{' '}
+                    This site runs on caffeine, not cookies. &middot;{' '}
                     <Link to="/impressum" className="underline hover:text-blue-400 transition-colors">Impressum</Link>
                 </div>
             </div>
